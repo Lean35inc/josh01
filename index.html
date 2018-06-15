@@ -16,27 +16,56 @@
         }
     </style>
     <script>
-        function changeImage(){
-            document.getElementById('img1').src='./images/img3.jpg' ;
-            document.getElementById('img2').src='./images/img3.jpg' ;
-            document.getElementById('img3').src='./images/img3.jpg' ;
-            document.getElementById('img4').src='./images/img3.jpg' ;
-            document.getElementById('img5').src='./images/img3.jpg' ;
+        function changeImage11(){
+            document.getElementById('img1').src='./images/img5.jpg' ;
+            document.getElementById('img2').src='./images/img5.jpg' ;
+            document.getElementById('img3').src='./images/img6.jpg' ;
+            document.getElementById('img4').src='./images/img1.jpg' ;
+            document.getElementById('img5').src='./images/img1.jpg' ;
             document.getElementById('img6').src='./images/img3.jpg' ;
         };
+
+        var myText = "shoes"; 
+
+        function changeImage1(){
+            //document.getElementById('img1').src='./images/img4.jpg' ;
+            myText = document.getElementById('txt1').innerHTML ; 
+            displayvalue() ; 
+        };
+
+        function changeImage2(){
+            //document.getElementById('img1').src='./images/img5.jpg' ;
+            myText = document.getElementById('txt2').innerHTML ; 
+            displayvalue();
+        };
+        function changeImage3(){
+            //document.getElementById('img1').src='./images/img5.jpg' ;
+            myText = document.getElementById('txt3').innerHTML ; 
+            displayvalue();
+        };  
+        function displayvalue(){
+            if(myText != 'shoes')
+                alert(myText);
+        };
+
+        displayvalue() ;
+
     </script>
 </head>
 
 <body>
-    <button onclick="document.getElementById('img1').src='./images/kyrie3.jpg' ">
+    <button onclick="changeImage1()">
         change image1
     </button>
 
     <button 
-        onclick="changeImage();">
+        onclick="changeImage2()">
         change image2
     </button>
 
+    <button onclick="changeImage3()">
+        change image3
+    </button>
 
     <hr>
     <br>
@@ -44,13 +73,13 @@
     <table>
         <tr>
             <td>
-                <h2><p id="curry">Curry 5 ($130.00) </p> </h2>
+                <h2><p id="txt1">Curry 5 ($130.00) </p> </h2>
             </td>
             <td>
-                <h2><p id="Kyrie3"> Kyrie 3 ($89.99)</p></h2>
+                <h2><p id="txt2"> KD 9 ($124.99)</p></h2>
             </td>
             <td>
-                <h2> KD 9 ($124.99) </h2>
+                <h2> <p id="txt3"> Kyrie 3 ($89.99)</p></h2>
             </td>
         
         </tr>

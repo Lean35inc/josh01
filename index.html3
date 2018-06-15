@@ -8,6 +8,28 @@
 
 
 
+    <script>
+        function changeImage(){
+            document.getElementById('img1').src='./images/img4.jpg' ;
+            document.getElementById('img2').src='./images/img3.jpg' ;
+            document.getElementById('img3').src='./images/img3.jpg' ;
+            document.getElementById('img4').src='./images/img3.jpg' ;
+            document.getElementById('img5').src='./images/img1.jpg' ;
+            document.getElementById('img6').src='./images/img3.jpg' ;
+        };
+    </script>
+</head>
+
+<body>
+    <button onclick="document.getElementById('img1').src='./images/kyrie3.jpg' ">
+        change image1
+    </button>
+
+    <button 
+        onclick="changeImage();">
+        change image2
+    </button>
+
 
 
 
