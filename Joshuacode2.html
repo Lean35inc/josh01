@@ -1,0 +1,78 @@
+<html>
+<head>
+    <body>
+        <title>Joshua's Basketball website</title>
+            <h1><p><font color="blue">Best Basketball shoes</font></p>
+          <h2><li>
+            <a href="https://www.footlocker.com/" target="_blank">Footlocker</a>
+        </li>
+        <li>
+            <a href="https://www.espn.com/" target="_blank">ESPN</a>
+        </li>
+        <li>
+            <a href="https://www.finishline.com/" target="_blank">Finish Line</a>
+        </li></h2>
+        <h1 id="demo">time</h1>
+        <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good day!";
+        }
+        console.log(new Date().getHours());
+
+
+        var date = new Date() ;
+        var hour = date.getHours();            
+        if (hour < 8)
+        {
+            document.getElementById ("demo").innerHTML ="Good morning";  
+            console.log("Good morning")
+        }
+        else if ( 8 < hour && hour < 12)
+        {
+            console.log("Good afernoon")
+            document.getElementById ("demo").innerHTML ="Good afternoon"
+        }
+         
+        else if (hour > 12)
+        {
+            console.log("Good evening")
+            document.getElementById ("demo").innerHTML = "Good evening"
+
+        }
+        var x = 0 ; 
+        var total  = 0;
+        while(x <= 10)
+        {
+            total = total + x ; 
+            document.getElementById ("demo").innerHTML = total;     
+            x = x + 1 ;
+        }
+
+         </script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+</html>
