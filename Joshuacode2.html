@@ -12,10 +12,15 @@
         <li>
             <a href="https://www.finishline.com/" target="_blank">Finish Line</a>
         </li></h2>
+
+
+
         <h1 id="demo">time</h1>
+
+        
         <script>
-        if (new Date().getHours() < 18) {
-            document.getElementById("demo").innerHTML = "Good day!";
+        if (new Date().getHours() < 10) {
+            document.getElementById("demo").innerHTML = "Steph Curry";
         }
         console.log(new Date().getHours());
 
@@ -23,20 +28,21 @@
         var date = new Date() ;
         var hour = date.getHours();            
         if (hour < 8)
+        
         {
-            document.getElementById ("demo").innerHTML ="Good morning";  
-            console.log("Good morning")
+            console.log("Steph Curry")
+            document.getElementById ("demo").innerHTML ="Steph Curry";  
         }
         else if ( 8 < hour && hour < 12)
         {
-            console.log("Good afernoon")
-            document.getElementById ("demo").innerHTML ="Good afternoon"
+            console.log("Kevin Durant")
+            document.getElementById ("demo").innerHTML ="Kevin Durant"
         }
          
         else if (hour > 12)
         {
-            console.log("Good evening")
-            document.getElementById ("demo").innerHTML = "Good evening"
+            console.log("Lebron to L.A")
+            document.getElementById ("demo").innerHTML = "Lebron to L.A"
 
         }
         var x = 0 ; 
@@ -51,10 +57,6 @@
          </script>
         
     </body>
-
-
-
-
 
 
 
